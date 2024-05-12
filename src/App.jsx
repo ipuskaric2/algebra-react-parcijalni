@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import userInput from './userInput';
+import userInfo from './userInfo';
 
 //pronaći korisnika i ispisati podatke o njemu
 //https://api.github.com/users/
