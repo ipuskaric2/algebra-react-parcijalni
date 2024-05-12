@@ -1,8 +1,8 @@
-import useSWR from "swr";
+import useSWR from 'swr';
 
-const fetcher = (...args) => fetch(...args).then(response=>response.json())
+const fetcher = (...args) => fetch(...args).then(response=>response.json());
 
-function userInfo({userName}){
+function UserInfo({userName}){
     const { data, error, isLoading } = useSWR(`https://api.github.com/users/${userName.toLowerCase()}`, fetcher)
     
     if(isLoading){
@@ -26,4 +26,4 @@ function userInfo({userName}){
   </div>
 }
 
-export default userInfo;
+export default UserInfo;

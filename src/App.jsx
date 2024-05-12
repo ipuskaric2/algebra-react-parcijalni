@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import userInput from './userInput';
-import userInfo from './userInfo';
+import { useState } from 'react';
+import './App.css';
+import UserInput from './userInput';
+import UserInfo from './userInfo';
 
 //pronaći korisnika i ispisati podatke o njemu
 //https://api.github.com/users/
@@ -12,12 +12,11 @@ function App(){
   return(
     <>
       <h3>GitHub username:</h3>
-      <userInput 
-      onComplete={(inputValue) =>{
+      <UserInput onComplete={(inputValue) =>{
         setCurrentSearch(inputValue)
       }}/>
-      {currentSearch && <userInfo userName={currentSearch}/>} 
+      {currentSearch && <UserInfo userName={currentSearch}/>} 
     </>
-  )
+  );
 }
-export default App
+export default App;

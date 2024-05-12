@@ -1,6 +1,6 @@
-import './App.css'
+import './App.css';
 
-function userInput({onComplete}){
+function UserInput({onComplete}){
     return <form onSubmit={(event)=>{
       event.preventDefault(); 
       const formElement = event.target;
@@ -15,4 +15,4 @@ function userInput({onComplete}){
     </form>
   }
 
-  export default userInput;
+  export default UserInput;
