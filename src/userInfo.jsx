@@ -19,10 +19,10 @@ function UserInfo({userName}){
     const {avatar_url, name, location, bio} = data;
 
     return <div style={{textAlign: "left"}}>
-    <p>Avatar_url: <b>{avatar_url}</b></p>
-    <p>Name: <b>{name}</b></p>
-    <p>Location: <b>{location}</b></p>
-    <p>Bio: <b>{bio}</b></p>
+    <img src={avatar_url} alt="avatar" />
+    <p className="username"> {name}</p>
+    <p><b>LOCATION:</b> {location}</p>
+    <p><b>BIO:</b> {bio}</p>
   </div>
 }
 

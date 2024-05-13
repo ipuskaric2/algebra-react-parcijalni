@@ -33,6 +33,20 @@ h3{
   font-style: normal;
 }
 
+img{
+  margin-top: 30px;
+  border-radius: 300px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.username{
+  font-size: 36px;
+  font-weight: 600 ;
+  display: inline;
+  padding-left: 30px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
